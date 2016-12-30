@@ -1,0 +1,18 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+format_table	tt_json.lua	/^local function format_table(t)$/;"	f
+get_from_cache	get_value.lua	/^function get_from_cache(key)$/;"	f
+get_from_redis	get_value.lua	/^function get_from_redis(key)$/;"	f
+handler 	init_worker.lua	/^ handler = function (premature)$/;"	f
+handler 	timer.lua	/^handler = function (premeture, param)$/;"	f
+json_decode	tt_json.lua	/^local function json_decode(str)$/;"	f
+parse_array	request_header.lua	/^    local function parse_array(key, tab)$/;"	f
+parse_array	sub_request_header.lua	/^    local function parse_array(key, tab)$/;"	f
+pcall(function (str) json_value 	tt_json.lua	/^    pcall(function (str) json_value = json.decode(str) end, str)$/;"	f
+print_table	request_header.lua	/^local function print_table(t)$/;"	f
+print_table	sub_request_header.lua	/^local function print_table(t)$/;"	f
+set_to_cache	get_value.lua	/^function set_to_cache(key, value, exptime)$/;"	f
