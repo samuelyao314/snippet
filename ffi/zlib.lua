@@ -9,7 +9,7 @@ ffi.cdef[[
     int uncompress(uint8_t *dest, unsigned long *destLen, const uint8_t *source, unsigned long sourceLen);
 ]]
 
-local zlib = ffi.load(ffi.os == "Windows" and "zlib1" or "z")
+local zlib = ffi.load("z")
 
 local function compress(txt)
     local n = zlib.compressBound(#txt)
@@ -30,7 +30,7 @@ end
 
 local txt = string.rep("abcd", 1000)
 print("Uncompressed size: ", #txt)
-local c = compress(txt) 
+local c = compress(txt)
 print("Compressed size: ", #c)
 local txt2 = uncompress(c, #txt)
 assert(txt2 == txt)

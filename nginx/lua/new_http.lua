@@ -3,18 +3,10 @@
 ngx.req.read_body()
 local args, err = ngx.req.get_uri_args()
 
---[[
-local res = ngx.location.capture('/spe_md5',
-        {
-            method = ngx.HTTP_POST,
-            body = args.data
-        })
---]]
-
 local http = require "resty.http"
 local httpc = http.new()
 local res, err = httpc:request_uri(
-        "http://127.0.0.1:8081/sp_md5",
+        "http://127.0.0.1:8080/api/sp_md5",
         {
             method = ngx.HTTP_POST,
             body = args.data

@@ -1,5 +1,5 @@
--- From: https://moonbingbing.gitbooks.io/openresty-best-practices/content/ngx_lua/ffi.html
--- 自定义定义C类型的方法
+-- From: http://luajit.org/ext_ffi_tutorial.html
+-- 使用 C 数据结构
 --
 local ffi = require("ffi")
 
@@ -17,8 +17,10 @@ local mt = {
 }
 
 point = ffi.metatype("point_t", mt)
+--print(point)
 
 local a = point(3, 4)
+--print(a)
 print(a.x, a.y)
 
 print(#a)

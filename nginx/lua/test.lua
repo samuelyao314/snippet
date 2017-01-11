@@ -1,2 +1,4 @@
-local ffi = require("ffi")
-ngx.say(ffi.os)
+ngx.say("hello")
+ngx.flush()
+ngx.sleep(3)
+ngx.say("the world")

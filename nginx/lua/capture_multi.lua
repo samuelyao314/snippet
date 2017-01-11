@@ -1,3 +1,4 @@
+--From: https://moonbingbing.gitbooks.io/openresty-best-practices/content/openresty/work_with_location.html
 local start_time = ngx.now()
 local res1, res2 = ngx.location.capture_multi({
         {"/api/sum", {args={a=3, b=8}}},
