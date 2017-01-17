@@ -11,6 +11,7 @@ local res, err = httpc:request_uri(
             method = ngx.HTTP_POST,
             body = args.data
         })
+ngx.log(ngx.ERR, "status" .. res.status)
 
 if 200 ~= res.status then
     ngx.exit(res.status)
