@@ -1,2 +1,3 @@
 --  OpenResty 系列课程
-ngx.say("hello 123123")
+local args = ngx.req.get_uri_args()
+ngx.say("hello " .. args.name)
