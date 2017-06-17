@@ -1,3 +1,4 @@
+-- http://xuewb.com/ngx_lua/cache.html
 local redis = require "resty.redis_iresty"
 local red = redis:new()
 

@@ -1,0 +1,10 @@
+// 查看ngx在一个req下的调用过程
+// 使用：sudo stap show_one_req.stap -x NGX_WORKER_PID -v
+// show_one_req.stap
+probe process("/home/samuel/openresty/nginx/sbin/nginx").function("ngx_http_*") {
+    printf("%s -> %s\n", thread_indent(4), probefunc());
+}
+
+probe process("/home/samuel/openresty/nginx/sbin/nginx").function("ngx_http_*").return {
+    printf("%s <- %s\n", thread_indent(-4), probefunc());
+}
