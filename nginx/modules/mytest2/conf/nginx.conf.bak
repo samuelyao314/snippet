@@ -1,0 +1,31 @@
+master_process  off;
+daemon off;
+
+http {
+    test_str main;
+
+
+    server {
+        listen 8080;
+        test_str server8080;
+        location /url3 {
+            mytest;
+            test_str loc3;
+        }
+    }
+
+    server {
+        listen 8081;
+        test_str server8081;
+
+        location /url1 {
+            mytest;
+            test_str loc1;
+        }
+
+        location /url2 {
+            mytest;
+            test_str loc2;
+        }
+    }
+}

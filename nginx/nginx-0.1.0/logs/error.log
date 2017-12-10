@@ -1,0 +1,190 @@
+2017/12/04 22:26:55 [emerg] 36929#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2017/12/04 22:27:25 [emerg] 37039#0: setuid(65534) failed (1: Operation not permitted)
+2017/12/04 22:27:25 [alert] 37037#0: worker process 37039 exited with fatal code 2 and could not respawn
+2017/12/04 22:27:25 [emerg] 37040#0: setuid(65534) failed (1: Operation not permitted)
+2017/12/04 22:27:25 [emerg] 37038#0: setuid(65534) failed (1: Operation not permitted)
+2017/12/04 22:27:25 [alert] 37037#0: worker process 37038 exited with fatal code 2 and could not respawn
+2017/12/04 22:27:25 [alert] 37037#0: worker process 37040 exited with fatal code 2 and could not respawn
+2017/12/04 22:33:16 [emerg] 39699#0: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2017/12/04 22:33:16 [emerg] 39699#0: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2017/12/04 22:33:16 [emerg] 39699#0: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2017/12/04 22:33:16 [emerg] 39699#0: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2017/12/04 22:33:16 [emerg] 39699#0: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2017/12/04 22:33:16 [emerg] 39699#0: still can not bind()
+2017/12/04 22:42:04 [info] 42109#0: epoll_wait() failed (4: Interrupted system call)
+2017/12/04 22:49:05 [info] 53681#0: epoll_wait() failed (4: Interrupted system call)
+2017/12/05 11:22:09 [info] 56081#0: epoll_wait() failed (4: Interrupted system call)
+2017/12/05 13:20:06 [info] 57101#0: OS: Linux 4.10.0-40-generic
+2017/12/05 13:20:06 [info] 57101#0: sysctl(KERN_RTSIGMAX): 0
+2017/12/05 13:20:06 [info] 57101#0: getrlimit(RLIMIT_NOFILE): 1024:1048576
+2017/12/05 13:20:06 [debug] 57101#0: malloc: 22E2B40:6144
+2017/12/05 13:20:06 [debug] 57101#0: malloc: 7F49406AE010:147456
+2017/12/05 13:20:06 [debug] 57101#0: malloc: 22E4350:98304
+2017/12/05 13:20:06 [debug] 57101#0: malloc: 22FC360:98304
+2017/12/05 13:20:06 [debug] 57101#0: epoll add event: fd:5 op:1 ev:00000001
+2017/12/05 13:20:06 [debug] 57101#0: worker cycle
+2017/12/05 13:20:06 [debug] 57101#0: epoll timer: -1
+2017/12/05 13:26:13 [info] 57101#0: signal 2 (SIGINT) received, exiting
+2017/12/05 13:26:13 [info] 57101#0: epoll_wait() failed (4: Interrupted system call)
+2017/12/05 13:26:13 [info] 57101#0: exit
+2017/12/05 13:26:13 [debug] 57101#0: free: 22D9370, unused: 0
+2017/12/05 13:26:13 [debug] 57101#0: free: 22DEB30, unused: 14411
+2017/12/05 13:26:15 [info] 57201#0: OS: Linux 4.10.0-40-generic
+2017/12/05 13:26:15 [info] 57201#0: sysctl(KERN_RTSIGMAX): 0
+2017/12/05 13:26:15 [info] 57201#0: getrlimit(RLIMIT_NOFILE): 1024:1048576
+2017/12/05 13:26:15 [debug] 57201#0: malloc: 1A35B40:6144
+2017/12/05 13:26:15 [debug] 57201#0: malloc: 7FC4A942A010:147456
+2017/12/05 13:26:15 [debug] 57201#0: malloc: 1A37350:98304
+2017/12/05 13:26:15 [debug] 57201#0: malloc: 1A4F360:98304
+2017/12/05 13:26:15 [debug] 57201#0: epoll add event: fd:5 op:1 ev:00000001
+2017/12/05 13:26:15 [debug] 57201#0: worker cycle
+2017/12/05 13:26:15 [debug] 57201#0: epoll timer: -1
+2017/12/05 13:28:33 [info] 57201#0: signal 2 (SIGINT) received, exiting
+2017/12/05 13:28:33 [info] 57201#0: epoll_wait() failed (4: Interrupted system call)
+2017/12/05 13:28:33 [info] 57201#0: exit
+2017/12/05 13:28:33 [debug] 57201#0: free: 1A2C370, unused: 0
+2017/12/05 13:28:33 [debug] 57201#0: free: 1A31B30, unused: 14411
+2017/12/05 13:29:00 [debug] 57313#0: counter: 7F170F0D8080, 0
+2017/12/05 13:29:00 [info] 57313#0: OS: Linux 4.10.0-40-generic
+2017/12/05 13:29:00 [info] 57313#0: sysctl(KERN_RTSIGMAX): 0
+2017/12/05 13:29:00 [info] 57313#0: getrlimit(RLIMIT_NOFILE): 1024:1048576
+2017/12/05 13:29:00 [info] 57314#0: start worker processes
+2017/12/05 13:29:00 [debug] 57314#0: channel 6:7
+2017/12/05 13:29:00 [debug] 57314#0: spawn worker process: 57315
+2017/12/05 13:29:00 [debug] 57314#0: sigsuspend
+2017/12/05 13:29:00 [emerg] 57315#0: setuid(65534) failed (1: Operation not permitted)
+2017/12/05 13:29:00 [info] 57314#0: signal 17 (SIGCHLD) received
+2017/12/05 13:29:00 [info] 57314#0: worker process 57315 exited with code 2
+2017/12/05 13:29:00 [alert] 57314#0: worker process 57315 exited with fatal code 2 and could not respawn
+2017/12/05 13:29:00 [debug] 57314#0: wake up
+2017/12/05 13:29:00 [debug] 57314#0: reap childs
+2017/12/05 13:29:00 [debug] 57314#0: child: 0 57315 e:0 t:1 d:0 r:0 j:0
+2017/12/05 13:29:00 [debug] 57314#0: sigsuspend
+2017/12/05 13:29:36 [info] 57314#0: signal 15 (SIGTERM) received, exiting
+2017/12/05 13:29:36 [debug] 57314#0: wake up
+2017/12/05 13:29:36 [info] 57314#0: exit
+2017/12/05 13:29:36 [debug] 57314#0: free: 1701370, unused: 0
+2017/12/05 13:29:36 [debug] 57314#0: free: 1706B30, unused: 14353
+2017/12/05 13:30:07 [debug] 57485#0: counter: 7FB0B2E2A080, 0
+2017/12/05 13:30:07 [info] 57485#0: OS: Linux 4.10.0-40-generic
+2017/12/05 13:30:07 [info] 57485#0: sysctl(KERN_RTSIGMAX): 0
+2017/12/05 13:30:07 [info] 57485#0: getrlimit(RLIMIT_NOFILE): 1024:1048576
+2017/12/05 13:30:07 [info] 57486#0: start worker processes
+2017/12/05 13:30:07 [debug] 57486#0: channel 6:7
+2017/12/05 13:30:07 [debug] 57486#0: spawn worker process: 57487
+2017/12/05 13:30:07 [debug] 57486#0: sigsuspend
+2017/12/05 13:30:07 [emerg] 57487#0: setuid(65534) failed (1: Operation not permitted)
+2017/12/05 13:30:07 [info] 57486#0: signal 17 (SIGCHLD) received
+2017/12/05 13:30:07 [info] 57486#0: worker process 57487 exited with code 2
+2017/12/05 13:30:07 [alert] 57486#0: worker process 57487 exited with fatal code 2 and could not respawn
+2017/12/05 13:30:07 [debug] 57486#0: wake up
+2017/12/05 13:30:07 [debug] 57486#0: reap childs
+2017/12/05 13:30:07 [debug] 57486#0: child: 0 57487 e:0 t:1 d:0 r:0 j:0
+2017/12/05 13:30:07 [debug] 57486#0: sigsuspend
+2017/12/05 13:30:34 [info] 57486#0: signal 15 (SIGTERM) received, exiting
+2017/12/05 13:30:34 [debug] 57486#0: wake up
+2017/12/05 13:30:34 [info] 57486#0: exit
+2017/12/05 13:30:34 [debug] 57486#0: free: FFF370, unused: 0
+2017/12/05 13:30:34 [debug] 57486#0: free: 1004B30, unused: 14353
+2017/12/05 13:30:37 [debug] 57555#0: counter: 7FAA9E9EC080, 0
+2017/12/05 13:30:37 [info] 57555#0: OS: Linux 4.10.0-40-generic
+2017/12/05 13:30:37 [info] 57555#0: sysctl(KERN_RTSIGMAX): 0
+2017/12/05 13:30:37 [info] 57555#0: getrlimit(RLIMIT_NOFILE): 1024:1048576
+2017/12/05 13:30:37 [info] 57556#0: start worker processes
+2017/12/05 13:30:37 [debug] 57556#0: channel 6:7
+2017/12/05 13:30:37 [debug] 57556#0: spawn worker process: 57557
+2017/12/05 13:30:37 [debug] 57556#0: sigsuspend
+2017/12/05 13:30:37 [emerg] 57557#0: setuid(65534) failed (1: Operation not permitted)
+2017/12/05 13:30:37 [info] 57556#0: signal 17 (SIGCHLD) received
+2017/12/05 13:30:37 [info] 57556#0: worker process 57557 exited with code 2
+2017/12/05 13:30:37 [alert] 57556#0: worker process 57557 exited with fatal code 2 and could not respawn
+2017/12/05 13:30:37 [debug] 57556#0: wake up
+2017/12/05 13:30:37 [debug] 57556#0: reap childs
+2017/12/05 13:30:37 [debug] 57556#0: child: 0 57557 e:0 t:1 d:0 r:0 j:0
+2017/12/05 13:30:37 [debug] 57556#0: sigsuspend
+2017/12/05 13:32:11 [emerg] 57667#0: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2017/12/05 13:32:11 [notice] 57667#0: try again to bind() after 500ms
+2017/12/05 13:32:11 [emerg] 57667#0: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2017/12/05 13:32:11 [notice] 57667#0: try again to bind() after 500ms
+2017/12/05 13:32:11 [emerg] 57667#0: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2017/12/05 13:32:11 [notice] 57667#0: try again to bind() after 500ms
+2017/12/05 13:32:12 [emerg] 57667#0: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2017/12/05 13:32:12 [notice] 57667#0: try again to bind() after 500ms
+2017/12/05 13:32:12 [emerg] 57667#0: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2017/12/05 13:32:12 [notice] 57667#0: try again to bind() after 500ms
+2017/12/05 13:32:12 [emerg] 57667#0: still can not bind()
+2017/12/05 13:32:20 [info] 57556#0: signal 15 (SIGTERM) received, exiting
+2017/12/05 13:32:20 [debug] 57556#0: wake up
+2017/12/05 13:32:20 [info] 57556#0: exit
+2017/12/05 13:32:20 [debug] 57556#0: free: 7B8370, unused: 9
+2017/12/05 13:32:20 [debug] 57556#0: free: 7BDB30, unused: 14369
+2017/12/05 13:32:24 [info] 57672#0: OS: Linux 4.10.0-40-generic
+2017/12/05 13:32:24 [info] 57672#0: sysctl(KERN_RTSIGMAX): 0
+2017/12/05 13:32:24 [info] 57672#0: getrlimit(RLIMIT_NOFILE): 1024:1048576
+2017/12/05 13:32:24 [debug] 57672#0: malloc: 17FBB40:6144
+2017/12/05 13:32:24 [debug] 57672#0: malloc: 7F0EE5D2D010:147456
+2017/12/05 13:32:24 [debug] 57672#0: malloc: 17FD350:98304
+2017/12/05 13:32:24 [debug] 57672#0: malloc: 1815360:98304
+2017/12/05 13:32:24 [debug] 57672#0: epoll add event: fd:5 op:1 ev:00000001
+2017/12/05 13:32:24 [debug] 57672#0: worker cycle
+2017/12/05 13:32:24 [debug] 57672#0: epoll timer: -1
+2017/12/05 13:32:25 [info] 57672#0: signal 2 (SIGINT) received, exiting
+2017/12/05 13:32:25 [info] 57672#0: epoll_wait() failed (4: Interrupted system call)
+2017/12/05 13:32:25 [info] 57672#0: exit
+2017/12/05 13:32:25 [debug] 57672#0: free: 17F2370, unused: 0
+2017/12/05 13:32:25 [debug] 57672#0: free: 17F7B30, unused: 14379
+2017/12/05 13:35:00 [debug] 57804#0: counter: 7FA7F2C97080, 0
+2017/12/05 13:35:00 [info] 57804#0: OS: Linux 4.10.0-40-generic
+2017/12/05 13:35:00 [info] 57804#0: sysctl(KERN_RTSIGMAX): 0
+2017/12/05 13:35:00 [info] 57804#0: getrlimit(RLIMIT_NOFILE): 1024:1048576
+2017/12/05 13:35:00 [info] 57805#0: start worker processes
+2017/12/05 13:35:00 [debug] 57805#0: channel 6:7
+2017/12/05 13:35:00 [debug] 57805#0: spawn worker process: 57806
+2017/12/05 13:35:00 [debug] 57805#0: sigsuspend
+2017/12/05 13:35:00 [emerg] 57806#0: setuid(65534) failed (1: Operation not permitted)
+2017/12/05 13:35:00 [info] 57805#0: signal 17 (SIGCHLD) received
+2017/12/05 13:35:00 [info] 57805#0: worker process 57806 exited with code 2
+2017/12/05 13:35:00 [alert] 57805#0: worker process 57806 exited with fatal code 2 and could not respawn
+2017/12/05 13:35:00 [debug] 57805#0: wake up
+2017/12/05 13:35:00 [debug] 57805#0: reap childs
+2017/12/05 13:35:00 [debug] 57805#0: child: 0 57806 e:0 t:1 d:0 r:0 j:0
+2017/12/05 13:35:00 [debug] 57805#0: sigsuspend
+2017/12/05 13:35:52 [info] 57805#0: signal 15 (SIGTERM) received, exiting
+2017/12/05 13:35:52 [debug] 57805#0: wake up
+2017/12/05 13:35:52 [info] 57805#0: exit
+2017/12/05 13:35:52 [debug] 57805#0: free: 122F370, unused: 0
+2017/12/05 13:35:52 [debug] 57805#0: free: 1234B30, unused: 14393
+2017/12/05 13:35:56 [debug] 57817#0: counter: 7FDFF19E6080, 0
+2017/12/05 13:35:56 [info] 57817#0: OS: Linux 4.10.0-40-generic
+2017/12/05 13:35:56 [info] 57817#0: sysctl(KERN_RTSIGMAX): 0
+2017/12/05 13:35:56 [info] 57817#0: getrlimit(RLIMIT_NOFILE): 1024:1048576
+2017/12/05 13:35:56 [info] 57818#0: start worker processes
+2017/12/05 13:35:56 [debug] 57818#0: channel 6:7
+2017/12/05 13:35:56 [debug] 57818#0: spawn worker process: 57819
+2017/12/05 13:35:56 [debug] 57818#0: sigsuspend
+2017/12/05 13:35:56 [debug] 57819#0: malloc: A4FB40:6144
+2017/12/05 13:35:56 [debug] 57819#0: malloc: 7FDFF19A4010:147456
+2017/12/05 13:35:56 [debug] 57819#0: malloc: A51350:98304
+2017/12/05 13:35:56 [debug] 57819#0: malloc: A69360:98304
+2017/12/05 13:35:56 [debug] 57819#0: epoll add event: fd:5 op:1 ev:00000001
+2017/12/05 13:35:56 [debug] 57819#0: epoll add event: fd:7 op:1 ev:00000001
+2017/12/05 13:35:56 [debug] 57819#0: worker cycle
+2017/12/05 13:35:56 [debug] 57819#0: epoll timer: -1
+2017/12/05 19:40:24 [info] 57818#0: signal 15 (SIGTERM) received, exiting
+2017/12/05 19:40:24 [debug] 57818#0: wake up
+2017/12/05 19:40:24 [debug] 57818#0: child: 0 57819 e:0 t:0 d:0 r:1 j:0
+2017/12/05 19:40:24 [debug] 57818#0: temination cycle: 100
+2017/12/05 19:40:24 [debug] 57818#0: sigsuspend
+2017/12/05 19:40:24 [debug] 57819#0: epoll: fd:7 ev:0001 d:7FDFF19A4400
+2017/12/05 19:40:24 [debug] 57819#0: channel handler
+2017/12/05 19:40:24 [debug] 57819#0: channel: 16
+2017/12/05 19:40:24 [debug] 57819#0: channel command: 4
+2017/12/05 19:40:24 [info] 57819#0: exiting
+2017/12/05 19:40:24 [info] 57818#0: signal 17 (SIGCHLD) received
+2017/12/05 19:40:24 [info] 57818#0: worker process 57819 exited with code 0
+2017/12/05 19:40:24 [debug] 57818#0: wake up
+2017/12/05 19:40:24 [debug] 57818#0: reap childs
+2017/12/05 19:40:24 [debug] 57818#0: child: 0 57819 e:1 t:1 d:0 r:1 j:0
+2017/12/05 19:40:24 [info] 57818#0: exit
+2017/12/05 19:40:24 [debug] 57818#0: free: A46370, unused: 0
+2017/12/05 19:40:24 [debug] 57818#0: free: A4BB30, unused: 14393

@@ -1,4 +1,5 @@
 // from http://tengine.taobao.org/book/chapter_03.html
+// handler模块的挂载，采用的是按处理阶段挂载
 #include <ngx_config.h>
 #include <ngx_core.h>
 #include <ngx_http.h>

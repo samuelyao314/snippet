@@ -1,0 +1,12 @@
+## 说明
+这个版本是基于nginx-0.1.0 进行修改。默认下载包无法编译成功。
+修复的方式参考的是  http://blog.csdn.net/yuanyu5237/article/details/44275761。
+
+## 编译
+
+```
+    $ ./make.sh
+```
+
+
+
