@@ -17,7 +17,6 @@ function table.arraycopy(object)
     return result
 end
 
-
 --
 -- Returns true if the table contains the specified value.
 --
@@ -35,7 +34,6 @@ end
 --
 -- Make a shallow copy of a table
 --
-
 function table.shallowcopy(object)
     local copy = {}
     for k, v in pairs(object) do

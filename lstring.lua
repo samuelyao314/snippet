@@ -93,8 +93,6 @@ function string.lines(s)
     return n
 end
 
-
-
 --
 -- Trim any whitespace on both left and right of s
 --
