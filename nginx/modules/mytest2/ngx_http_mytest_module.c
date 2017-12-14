@@ -18,6 +18,10 @@ typedef struct {
     ngx_uint_t my_bitmask;
     ngx_uint_t my_access;
     ngx_path_t* my_path;
+
+    // 自定义
+    ngx_str_t my_config_str;
+    ngx_int_t my_config_num;
 } ngx_http_mytest_conf_t;
 
 
@@ -38,6 +42,7 @@ static ngx_conf_bitmask_t test_bitmasks[] = {
 static ngx_int_t ngx_http_mytest_init(ngx_conf_t *cf);
 static void *ngx_http_mytest_create_loc_conf(ngx_conf_t *cf);
 static ngx_int_t ngx_http_mytest_handler(ngx_http_request_t *r);
+static char* ngx_conf_set_myconfig(ngx_conf_t *cf, ngx_command_t *cmd, void *conf);
 
 static ngx_http_module_t ngx_http_mytest_module_ctx = {
     NULL,
@@ -125,8 +130,9 @@ static ngx_command_t ngx_http_mytest_commands[] = {
         offsetof(ngx_http_mytest_conf_t, my_bufs),
         NULL},
     {
+        // 这个指令暂时会报错
         ngx_string("test_enum"),
-        NGX_HTTP_LOC_CONF | NGX_CONF_TAKE1,
+        NGX_HTTP_LOC_CONF | NGX_CONF_TAKE2,
         ngx_conf_set_enum_slot,
         NGX_HTTP_LOC_CONF_OFFSET,
         offsetof(ngx_http_mytest_conf_t, my_enum_seq),
@@ -139,12 +145,29 @@ static ngx_command_t ngx_http_mytest_commands[] = {
         offsetof(ngx_http_mytest_conf_t, my_bitmask),
         test_bitmasks},
     {
+        // 这个指令暂时会报错
         ngx_string("test_access"),
         NGX_HTTP_LOC_CONF | NGX_CONF_TAKE123,
         ngx_conf_set_access_slot,
         NGX_HTTP_LOC_CONF_OFFSET,
         offsetof(ngx_http_mytest_conf_t, my_access),
         NULL},
+    {
+        ngx_string("test_path"),
+        NGX_HTTP_LOC_CONF | NGX_CONF_TAKE1234,
+        ngx_conf_set_path_slot,
+        NGX_HTTP_LOC_CONF_OFFSET,
+        offsetof(ngx_http_mytest_conf_t, my_path),
+        NULL},
+
+    {
+        ngx_string("test_myconfig"),
+        NGX_HTTP_LOC_CONF | NGX_CONF_TAKE12,
+        ngx_conf_set_myconfig,
+        NGX_HTTP_LOC_CONF_OFFSET,
+        0,
+        NULL},
+
 
 
     ngx_null_command
@@ -256,8 +279,10 @@ ngx_http_mytest_handler(ngx_http_request_t *r)
     ngx_log_error(NGX_LOG_EMERG, r->connection->log, 0,
         "my_bufs, num: %ui, size: %z", mycf->my_bufs.num, mycf->my_bufs.size);
 
+    ngx_log_error(NGX_LOG_EMERG, r->connection->log, 0, "my_path, name:%V", &(mycf->my_path->name));
 
-
+    ngx_log_error(NGX_LOG_EMERG, r->connection->log, 0, "my_config_str: %V, my_config_num: %d",
+            &(mycf->my_config_str), mycf->my_config_num);
 
 
 
@@ -299,4 +324,23 @@ ngx_http_mytest_handler(ngx_http_request_t *r)
 
 	// 发送包体，最后调用ngx_http_finalize_request方法结束请求
 	return ngx_http_output_filter(r, &out);
+}
+
+static char*
+ngx_conf_set_myconfig(ngx_conf_t *cf, ngx_command_t *cmd, void *conf)
+{
+    ngx_http_mytest_conf_t *mycf = conf;
+
+    ngx_str_t* value = cf->args->elts;
+    if (cf->args->nelts > 1) {
+        mycf->my_config_str = value[1];
+    }
+    if (cf->args->nelts > 2) {
+        mycf->my_config_num = ngx_atoi(value[2].data, value[2].len);
+        if (mycf->my_config_num == NGX_ERROR) {
+            return "invalid number";
+        }
+    }
+
+    return NGX_CONF_OK;
 }
