@@ -10,3 +10,4 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 
 add_subdirectory(thirdparty)
 add_subdirectory(test_sds)
+add_subdirectory(coroutine_test)
